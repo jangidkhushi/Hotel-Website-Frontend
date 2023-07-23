@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)file:///F:/HTML/project.html -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Website</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+</head>
+<body>
+<header>
+  <div class="flex_space content">
+    <div class="logo">
+      <img src="logo.svg" alt="">
+    </div>
+    <div class="navlinks">
+      <ul id="menulist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><i class="fa fa-search"></i></li>
+        <li><a href="#book"><button class="primary-btn">BOOK NOW</button></li></a>      
+      </ul>
+      <span class="fa fa-bars"> </span>
+    </div>
+  </div>
+</header>
+
+<script>
+  var menulist= document.getElementById('menulist');
+  menulist.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(menulist.style.maxHeight == "0px"){
+      menulist.style.maxHeight="100vh";
+    } else{
+      menulist.style.maxHeight="0px";
+    }
+  }
+</script>
+<section class="news top rooms">
+  <div class="container">
+    <div class="heading">
+      <h1>NEWS</h1>
+      <h2>Our News</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</p>
+    </div>
+    <div class="content flex">
+      <div class="left grid2">
+        <div class="items">
+          <div class="image">
+            <img src="news1.jpg">
+          </div>
+          <div class="text">
+            <h2>Finibus bonorum malorm.</h2>
+            <div class="admin flex">
+              <i class="fa fa-user"></i>
+              <label>Admin</label>
+              <i class="fa fa-heart"></i>
+              <label>500</label>
+              <i class="fa fa-comments"></i>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam </p>
+          </div>
+        </div>
+        <div class="items">
+          <div class="image">
+            <img src="news2.jpg">
+          </div>
+          <div class="text">
+            <h2>Finibus bonorum malorm.</h2>
+            <div class="admin flex">
+              <i class="fa fa-user"></i>
+              <label>Admin</label>
+              <i class="fa fa-heart"></i>
+              <label>500</label>
+              <i class="fa fa-comments"></i>
+            </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="box flex">
+          <div class="img">
+            <img src="news3.jpg" alt="">
+          </div>
+          <div class="stext">
+            <h2>Etiam Vel Nequ</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <img src="news4.jpg" alt="">
+          </div>
+          <div class="stext">
+            <h2>Etiam Vel Nequ</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="img">
+            <img src="news5.png" alt="">
+          </div>
+          <div class="stext">
+            <h2>Etiam Vel Nequ</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="newsletter mtop">
+  <div class="container flex_space">
+    <h1>Subscribe to Our Newsletter</h1>
+    <input type="text" placeholder="Your Email">
+    <button id="subs-btn">Subscribe</button>
+  </div>
+</section>
+<footer>
+  <div class="container grid">
+    <div class="box">
+      <img src="logo.svg" alt="">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+      <div class="icon">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Links</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+      <i class="fa fa-location-dot"></i>
+      <label>1201 park street, Avenue, Dhanmondy, Dhaka</label><br>
+      <i class="fa fa-phone"></i>
+      <label>[88] 1234 234 556</label><br>
+      <i class="fa fa-envelope"></i>
+      <label>info@dentar.com</label><br>
+    </div>
+  </div>  
+</footer>
+
+
+<div class="legal">
+  <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+</div>
+<script src="https://kit.fontawesome.com/80f154872f.js" crossorigin="anonymous"></script>
+</body>
+</html>
