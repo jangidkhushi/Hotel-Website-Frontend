@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)file:///F:/HTML/project.html -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Website</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+   
+
+</head>
+<body>
+<header>
+  <div class="flex_space content">
+    <div class="logo">
+      <img src="logo.svg" alt="">
+    </div>
+    <div class="navlinks">
+      <ul id="menulist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><i class="fa fa-search"></i></li>
+        <li><a href="#book"><button class="primary-btn">BOOK NOW</button></li></a>      
+      </ul>
+      <span class="fa fa-bars"> </span>
+    </div>
+  </div>
+</header>
+
+<script>
+  var menulist= document.getElementById('menulist');
+  menulist.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(menulist.style.maxHeight == "0px"){
+      menulist.style.maxHeight="100vh";
+    } else{
+      menulist.style.maxHeight="0px";
+    }
+  }
+</script>
+
+<section class="home" id="home">
+  <div class="content">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="hotel3.jpg" alt="Hotel Companile">
+        <div class="text">
+          <h1>Spend Your Holidays</h1>
+          <p>Lorem ipsum sit amer constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+      
+        
+          <div class="flex">
+            <button class="primary-btn">READ MORE</button>
+            <button class="secondary-btn">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="hotel9.jpg" alt="Hotel Companile">
+        <div class="text">
+          <h1>Spend Your Holiday</h1>
+          <p>Lorem ipsum sit amer constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+      
+        
+          <div class="flex">
+            <button class="primary-btn">READ MORE</button>
+            <button class="secondary-btn">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="hotel10.jpg" alt="Hotel Companile">
+        <div class="text">
+          <h1>Spend Your Holiday</h1>
+          <p>Lorem ipsum sit amer constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+      
+        
+          <div class="flex">
+            <button class="primary-btn">READ MORE</button>
+            <button class="secondary-btn">CONTACT US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script>
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:true,
+      dots:false,
+      navText: ["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
+</script>
+
+
+
+<section class="book" id="book">
+  <div class="container flex_space">
+    <div class="text">
+      <h1><span>Book</span> Your Rooms</h1>
+    </div>
+    <div class="form">
+      <form class="grid">
+        <input type="date" placeholder ="Arrival Date">
+        <input type="date" placeholder ="Departure Date">
+        <input type="number" placeholder ="Adults">
+        <input type="number" placeholder ="Children">
+        <input type="submit" value="CHECK AVAILABILITY">
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="counter top">
+  <div class="container grid">
+    <div class="box">
+      <h1>2500</h1>
+      <hr>
+      <span>Customer</span>
+    </div>
+    <div class="box">
+      <h1>1250</h1>
+      <hr>
+      <span>Happy Customer</span>
+    </div>
+    <div class="box">
+      <h1>150</h1>
+      <hr>
+      <span>Expert Technician</span>
+    </div>
+    <div class="box">
+      <h1>3550</h1>
+      <hr>
+      <span>Desktop Reaired</span>
+    </div>
+  </div>
+</section>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:40,
+      nav:true,
+      dots:false,
+      navText: ["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:2,
+              margin:10,
+          },
+          1000:{
+              items:3
+          }
+      }
+  })
+</script>
+
+
+<section class="gallery">
+  <div class="container top">
+    <div class="heading">
+      <h1>PHOTOS</h1>
+      <h2>Our Gallery</h2>
+      <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+  </div>
+
+  <div class="content mtop">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div class="items">
+        <div class="img">
+          <img src="hotel_front.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery1.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery2.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery5.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery7.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery6.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery3.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery8.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="gallery4.jpg">
+        </div>
+        <div class="overlay">
+          <span class="fa fa-plus"></span>
+          <h3>Photo Title Here.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $('.owl-carousel1').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:true,
+      dots:false,
+      autoplay:true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:4,
+          },
+          1000:{
+              items:6
+          }
+      }
+  })
+</script>
+
+<section class="services  top">
+  <div class="container">
+    <div class="heading">
+      <h1>SERVICES</h1>
+      <h2>Our Services</h2>
+      <p>Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+    
+    <div class="content flex_space">
+      <div class="left grid2">
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>Delicious Food</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-person-biking"></i>
+            <h3>Fitness</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Inhouse Restaurant</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-spa"></i>
+            <h3>Beauty Spa</h3>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="services.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="Customer top">
+  <div class="container">
+    <div class="owl-carousel owl-carousel2 owl-theme">
+      <div class="item">
+        <i class="fa-solid fa-quote-right"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Julia Robertson</h3>
+        <label>Julia Robertson</label>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-quote-right"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Charles Darwin</h3>
+        <label>Charles Darwin</label>
+      </div>
+      <div class="item">
+        <i class="fa-solid fa-quote-right"></i>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>Peter Richardson</h3>
+        <label>Peter Richardson</label>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $('.owl-carousel2').owlCarousel({
+      loop:true,
+      margin:0,
+      nav:false,
+      dots: true,
+      responsive:{
+          0:{
+              items:1
+          },
+          768:{
+              items:1,
+          },
+          1000:{
+              items:1
+          }
+      }
+  })
+</script>
+
+
+<footer>
+  <div class="container grid" id="contact">
+    <div class="box">
+      <img src="logo.svg" alt="">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+      <div class="icon">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Links</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+      <i class="fa fa-location-dot"></i>
+      <label>1201 park street, Avenue, Dhanmondy, Dhaka</label><br>
+      <i class="fa fa-phone"></i>
+      <label>[88] 1234 234 556</label><br>
+      <i class="fa fa-envelope"></i>
+      <label>info@dentar.com</label><br>
+    </div>
+  </div>  
+</footer>
+
+
+<div class="legal">
+  <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+</div>
+<script src="https://kit.fontawesome.com/80f154872f.js" crossorigin="anonymous"></script>
+</body>
+</html>
